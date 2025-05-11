@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+
+<head>
+  <title>I love you</title>
+  <meta name="description" content="@giftvirtual">
+</head>
+
+<body>
+
+  <!-- Ganti Audio di sini -->
+  <audio src="batas senja.mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <!-- Wallpaper / Background --><img src="BG.jpg" id="wallpaper" />
+  </div>
+
+  <div id='Content'>
+
+    <div id="ftAwal">
+      <!-- Stiker Pembuka -->
+      <img src="https://feeldreams.github.io/pandaputih.gif" id="ftoAwal" />
+    </div>
+
+    <div id="loveIn">
+      <!-- Tombol LOVE --><label class='lovein'>&#10084;</label>
+    </div>
+    <p id="ket">Sentuh LOVEnya!</p>
+
+    <div class="kumpulanstiker">
+      <img src="GIF/1.gif" id="fotostiker" />
+      <img src="GIF/2.gif" id="fotostiker1" />
+      <img src="GIF/3.gif" id="fotostiker2" />
+      <img src="GIF/4.gif" id="fotostiker3" />
+      <img src="GIF/5.gif" id="fotostiker4" />
+      <img src="GIF/6.gif" id="fotostiker5" />
+      <img src="GIF/7.webp" id="fotostiker6" />
+      <img src="GIF/8.gif" id="fotostiker7" />
+      <img src="GIF/9.gif" id="fotostiker8" />
+      <img src="GIF/10.webp" id="fotostiker9" />
+    </div>
+
+    <div>
+      <div id='pergeseran'>
+
+        <!-- Edit Pesan di Sini -->
+        <p><b>
+            <span>Hi Princess.. from the moment our paths crossed, I never imagined someone could accept me for everything I am—punk, jamet, and all the quirks that come with it. You’ve embraced me completely, and that’s something I’ll always cherish.</span>
+          </b></p>
+
+        <p><b>
+            <span>In moments of chaos, you’ve been the calm. Never judging, just understanding. Your love isn’t just for my best moments, it’s for every piece of me, and that means everything.</span>
+          </b></p>
+
+        <p><b>
+            <span>We’ve been through a lot—good and bad—but no matter what, you’ve been the one I can always count on. You've been my constant support, my rock </span>
+          </b></p>
+
+        <p><b>
+            <span>We’ve had our fights, the times when we didn’t see eye to eye. But you always understood, listened, and helped me grow. You’ve made me better in ways I didn’t expect.</span>
+          </b></p>
+
+        <p><b>
+            <span>You’ve shown me what love really is—what it means to communicate openly, to heal, to grow together. You make me a better version of myself every single day.</span>
+          </b></p>
+
+        <p><b>
+            <span>Each day with you feels like a new adventure. Whether it's chaotic or peaceful, it’s better with you by my side. You’ve made even the toughest times feel worthwhile</span>
+          </b></p>
+
+        <p><b>
+            <span>With you, I’m not afraid to be myself. You bring out the best in me, and for that, I’ll always be grateful. You make me feel like I’m enough, just as I am</span>
+          </b></p>
+
+        <p><b>
+            <span>We may not be perfect, but we’re perfect for each other. And I wouldn’t change a single thing about us. We fit together like pieces of a puzzle, no matter how unconventional.</span>
+          </b></p>
+
+        <p><b>
+            <span>In those moments when everything seems uncertain, your laughter always brings me back. You have a way of making everything better, even without saying a word</span>
+          </b></p>
+
+        <p><b>
+            <span>Thank you for being you—the person who understands me like no one else. The one who makes every day brighter. Happy Anniversary, my love. Here's to us and to many more beautiful moments together.</span>
+          </b></p>
+      </div>
+    </div>
+    <p id="ketgeser">Klik untuk Geser!</p>
+
+       <!-- Edit Pesan Akhir di Sini -->
+       <div><blockquote id='bq'>
+         <p id="kalimat">Happy 2nd mensiversary, Princess. Two months might not seem like a long time, but every moment with you feels so special, so full of warmth and joy. I love how we laugh together, how we understand each other in ways words can't explain, and how every day with you feels like a new adventure. I hope as time goes on, we grow even closer, stronger, and happier. May our love continue to bloom like your favorite flowers—beautiful, vibrant, and full of life. No matter what happens, I want us to always choose each other, to always fight for what we have. Here’s to more silly jokes, deep conversations, and late-night talks. To more hugs, more "I love you’s," and more memories that we’ll cherish forever. Thank you for being you, for being with me. Let’s keep making this love story ours.</p>
+         <p id="pesanAkhir"> I love you, always and forever. 🤍</p>
+       </blockquote></div>
+
+     </div>
+
+  </div>
+
+  <script>
+    const body = document.querySelector("body"); const iniwp = []; iden = 1; const swalst = Swal.mixin({timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90, }); audio = new Audio('' + linkmp3.src); ftganti = 0; fungsi = 0; fungsiAwal = 0; deffotostiker = fotostiker.src; function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()} }, 100); Content.style = "opacity:1;margin-top:14vh"; const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageHeight: 80, }); 
+  </script>
+  <script src="script.js"></script>
+  <!-- Sampai Sini -->
+</body>
+
+</html>
